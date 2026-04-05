@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "framework": null,
     "functions": {
         "api/*.php": {
             "runtime": "vercel-php@0.7.1"
@@ -11,12 +10,5 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ],
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_KEY": "base64:MASUKKAN_APP_KEY_ANDA_DI_SINI",
-        "DB_CONNECTION": "sqlite",
-        "DB_DATABASE": "database/database.sqlite"
-    }
+    ]
 }
