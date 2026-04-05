@@ -1,0 +1,3 @@
+[variables]
+SERVER_NAME = "http://"
+PORT = "80"
