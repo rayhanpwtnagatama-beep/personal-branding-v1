@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'title' => 'Personal Branding V1',
             'description' => 'Iterasi pertama website portofolio pribadi dengan fokus pada performa.',
             'tech_stack' => 'Laravel, SQlite',
-            'link' => 'https://github.com/rayhanpwtnagatama-beep/portfolio-v1'
+            'link' => 'https://github.com/rayhanpwtnagatama-beep/personal-branding-v1'
         ]);
 
         // 2. DATA EXPERIENCES (3 DATA UNTUK 3 GRID)
