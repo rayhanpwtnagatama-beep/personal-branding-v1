@@ -1,12 +1,13 @@
 <?php
-namespace App\Models;
-use Illuminate\Database\Eloquent\Model;
+namespace App\Http\Controllers;
 
-class Project extends Model {
-    protected $fillable = ['title', 'description', 'tech_stack', 'link'];
-    protected $table = 'projects';
-    
-    public static function all($columns = ['*']) {
-        return parent::all($columns) ?? collect();
+use App\Models\Project;
+use App\Models\Experience;
+
+class PortfolioController extends Controller {
+    public function index() {
+        $projects = Project::all();
+        $experiences = Experience::all();
+        return view('welcome', compact('projects', 'experiences'));
     }
 }
